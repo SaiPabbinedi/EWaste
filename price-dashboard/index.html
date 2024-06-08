@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="page">
+        <div class="navbarpage">
+            <div class="title">E-Waste</div>
+            <div class="navitem">
+                <a href="profile.html">My Profile</a>
+            </div>
+        </div>
+        <div class="dashboard">
+            <div class="header">
+                Price Dashboard
+            </div>
+            <div class="content">
+                <canvas id="priceGraph1" class="graph"></canvas>
+                <div class="details">
+                    <div id="currentDate1">Date: </div>
+                    <div id="eWasteWeight1">Weight: 50kg</div>
+                    <div id="countdown1">Countdown: 00:10:00</div>
+                    <div id="currentBid1">Current Bid: $0</div>
+                    <div class="buttons">
+                        <button onclick="placeBid(10, 1)">Bid $10</button>
+                        <button onclick="placeBid(20, 1)">Bid $20</button>
+                        <button onclick="placeBid(50, 1)">Bid $50</button>
+                    </div>
+                    <div class="custom-bid">
+                        <input type="number" id="customBidAmount1" placeholder="Enter your bid">
+                        <button onclick="placeCustomBid(1)">Place Custom Bid</button>
+                    </div>
+                    <h3>Upcoming Bids</h3>
+                    <ul id="upcomingBids1" class="upcoming-bids"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="nextdashboard">
+            <div class="header">
+                Next Dashboard
+            </div>
+            <div class="content">
+                <canvas id="priceGraph2" class="graph"></canvas>
+                <div class="details">
+                    <div id="currentDate2">Date: </div>
+                    <div id="eWasteWeight2">Weight: 50kg</div>
+                    <div id="countdown2">Countdown: 00:10:00</div>
+                    <div id="currentBid2">Current Bid: $0</div>
+                    <div class="buttons">
+                        <button onclick="placeBid(10, 2)">Bid $10</button>
+                        <button onclick="placeBid(20, 2)">Bid $20</button>
+                        <button onclick="placeBid(50, 2)">Bid $50</button>
+                    </div>
+                    <div class="custom-bid">
+                        <input type="number" id="customBidAmount2" placeholder="Enter your bid">
+                        <button onclick="placeCustomBid(2)">Place Custom Bid</button>
+                    </div>
+                    <h3>Upcoming Bids</h3>
+                    <ul id="upcomingBids2" class="upcoming-bids"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/chart.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

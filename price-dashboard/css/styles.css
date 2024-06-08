@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+.page {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    overflow-y: auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.navbarpage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    padding: 1em;
+    color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.navbarpage .navitem a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+.navbarpage .title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.dashboard, .nextdashboard {
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    margin: 1em 0;
+    padding: 1em;
+    box-sizing: border-box;
+}
+.header {
+    background: #007bff;
+    color: white;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 4px;
+}
+.content {
+    padding: 0.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.graph {
+    width: 70%;
+    height: 400px;
+    background: #e0e0e0;
+    margin-right: 1em;
+}
+.details {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.details div {
+    margin-bottom: 0.5em;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+}
+.buttons button {
+    padding: 0.5em;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    background-color: #007bff;
+    color: white;
+}
+.buttons button:hover {
+    background: #0056b3;
+}
+.custom-bid {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+.custom-bid input {
+    padding: 0.5em;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 70%;
+}
+.custom-bid button {
+    padding: 0.5em;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    background-color: #007bff;
+    color: white;
+}
+.custom-bid button:hover {
+    background: #0056b3;
+}
+.upcoming-bids {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+.upcoming-bids li {
+    background: #f7f7f7;
+    padding: 0.5em;
+    margin-bottom: 0.3em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
